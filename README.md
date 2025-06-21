@@ -1,62 +1,38 @@
 # MCP-WebApplication
 
-A minimal web application written in **TypeScript** using **Express** and a handful of popular third‑party modules. It demonstrates:
+A minimal TypeScript web application built with Express, featuring environment configuration, request logging, CORS support, and external API integration.
 
-* Environment variable handling with **dotenv**
-* HTTP request logging via **morgan**
-* CORS support through **cors** middleware
-* External API consumption using **axios** (`/quote` endpoint)
-* Enhanced logging with **helper-logger**
+## Features
 
----
+- **Express** - Web framework
+- **Morgan** - Request logging
+- **CORS** - Cross-origin support
+- **Dotenv** - Environment variables
+- **Axios** - HTTP client
+- **Helper-logger** - Enhanced logging
 
-## ✨ Features
-
-| Module          | Purpose                               |
-| --------------- | ------------------------------------- |
-| `express`       | Core web framework                    |
-| `morgan`        | Dev‑friendly request logger           |
-| `cors`          | Cross‑Origin Resource Sharing headers |
-| `dotenv`        | Loads variables from `.env`           |
-| `axios`         | Fetches data from external APIs       |
-| `helper-logger` | Enhanced logging with TypeScript      |
-
----
-
-## ⚙️  Setup
+## Quick Start
 
 ```bash
-# 1. Install dependencies
-pnpm install # or npm install
+# Install dependencies
+pnpm install
 
-# 2. (Optional) create a .env file
+# Optional: Set custom port
 echo "PORT=4000" > .env
 
-# 3. Run in development mode
+# Development
 npx ts-node server.ts
 
-# 4. Build & run production
-npm run build   # tsc --outDir build
-node build/server.js
+# Production
+npm run build && npm start
 ```
 
-### Example `.env`
+## Endpoints
 
-```
-PORT=8080
-```
+- `GET /` - Hello page (HTML)
+- `GET /quote` - Random quote (JSON)
 
----
-
-## 🔍 Endpoints
-
-| Method | Path     | Description                 |
-| ------ | -------- | --------------------------- |
-| `GET`  | `/`      | Hello page (HTML)           |
-| `GET`  | `/quote` | Returns random quote (JSON) |
-
-Sample response from `/quote`:
-
+Example response:
 ```json
 {
   "quote": "Stay hungry. Stay foolish.",
@@ -64,34 +40,14 @@ Sample response from `/quote`:
 }
 ```
 
----
+## Scripts
 
-## 🛠 Scripts (in `package.json`)
-
-```json
-{
-  "scripts": {
-    "dev": "ts-node server.ts",
-    "build": "tsc",
-    "start": "node build/server.js"
-  }
-}
+```bash
+npm run dev    # Development with ts-node
+npm run build  # Compile TypeScript
+npm start      # Run production build
 ```
 
----
-
-## 📂 Project Structure
-
-```
-root
-├── server.ts       # Express app (TypeScript)
-├── package.json
-├── tsconfig.json   # TypeScript compiler options
-└── README.md       # This file
-```
-
----
-
-## 📝 License
+## License
 
 MIT
