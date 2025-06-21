@@ -5,7 +5,7 @@
 //
 // ────────────────────────────────────────────────────────────
 //  Requirements (install with npm or pnpm):
-//   express morgan cors dotenv axios chalk @types/express @types/node ts-node typescript
+//   express morgan cors dotenv axios helper-logger @types/express @types/node ts-node typescript
 //
 //  Run in dev mode:
 //     npx ts-node server.ts
@@ -19,7 +19,7 @@ import morgan from "morgan";
 import cors from "cors";
 import dotenv from "dotenv";
 import axios from "axios";
-import chalk from "chalk";
+import { log } from "helper-logger";
 
 dotenv.config();
 
@@ -44,12 +44,12 @@ app.get("/quote", async (_, res) => {
     const { data } = await axios.get("https://api.quotable.io/random");
     res.json({ quote: data.content, author: data.author });
   } catch (error) {
-    console.error(chalk.red("✖ Failed to fetch quote:"), error);
+    log.error("Failed to fetch quote:", error);
     res.status(500).json({ error: "Could not fetch quote" });
   }
 });
 
 // ────── Start server ──────
 app.listen(PORT, () => {
-  console.log(chalk.green(`Server running at http://localhost:${PORT}`));
+  log(`Server running at http://localhost:${PORT}`);
 });
