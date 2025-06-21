@@ -19,6 +19,7 @@ import morgan from "morgan";
 import cors from "cors";
 import dotenv from "dotenv";
 import axios from "axios";
+import { log } from "helper-logger";
 
 dotenv.config();
 
@@ -46,7 +47,7 @@ app.get("/quote", async (_, res) => {
     log("Successfully fetched quote");
     res.json({ quote: data.content, author: data.author });
   } catch (error) {
-    log.error("Failed to fetch quote:", error);
+    log("Failed to fetch quote:", error);
     res.status(500).json({ error: "Could not fetch quote" });
   }
 });
