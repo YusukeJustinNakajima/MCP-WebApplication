@@ -6,20 +6,20 @@ A minimal web application written in **TypeScript** using **Express** and a hand
 * HTTP request logging via **morgan**
 * CORS support through **cors** middleware
 * External API consumption using **axios** (`/quote` endpoint)
-* Colorful CLI logging with **chalk**
+* Enhanced logging with **helper-logger**
 
 ---
 
 ## ✨ Features
 
-| Module    | Purpose                               |
-| --------- | ------------------------------------- |
-| `express` | Core web framework                    |
-| `morgan`  | Dev‑friendly request logger           |
-| `cors`    | Cross‑Origin Resource Sharing headers |
-| `dotenv`  | Loads variables from `.env`           |
-| `axios`   | Fetches data from external APIs       |
-| `chalk`   | Colorful console output               |
+| Module          | Purpose                               |
+| --------------- | ------------------------------------- |
+| `express`       | Core web framework                    |
+| `morgan`        | Dev‑friendly request logger           |
+| `cors`          | Cross‑Origin Resource Sharing headers |
+| `dotenv`        | Loads variables from `.env`           |
+| `axios`         | Fetches data from external APIs       |
+| `helper-logger` | Enhanced logging with TypeScript      |
 
 ---
 
@@ -89,6 +89,19 @@ root
 ├── tsconfig.json   # TypeScript compiler options
 └── README.md       # This file
 ```
+
+---
+
+## 📋 Related Repositories
+
+All repositories in this organization:
+
+- **Airtable-C2** (Private) - C2 framework using Airtable low-code platform
+- **BugBounty-Resources-For-Japanese** - Repository of useful articles and sites on bug bounties
+- **MCP-WebApplication** - Minimal TypeScript Express application with logging, CORS, dotenv, axios, and helper-logger
+- **SigmaOptimizer** - Sigma rule generation and optimization tool for enhancing detection capabilities
+- **SigmaOptimizer-UI** - User interface for SigmaOptimizer
+- **ThreatStalker** - Multi-layered Sigma rule filtering for efficient threat hunting and forensic investigations
 
 ---
 
