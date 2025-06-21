@@ -2,31 +2,40 @@
 
 Minimal TypeScript Express app with logging, CORS, and API integration.
 
-## Features
-
-- Express + TypeScript
-- Logging with Morgan & helper-logger
-- CORS support
-- Environment config
-- HTTP client (Axios)
-
-## Setup
+## Quick Start
 
 ```bash
 npm install
 npm run dev
 ```
 
-## API
+## Features
+
+- Express + TypeScript
+- Logging (Morgan & helper-logger)
+- CORS support
+- Environment config
+- HTTP client (Axios)
+
+## Endpoints
 
 - `GET /` - Hello page
 - `GET /quote` - Random quote
 
+## Usage
+
+Import helper-logger for enhanced logging:
+
+```typescript
+import { log } from 'helper-logger';
+log('Hello');
+```
+
 ## Scripts
 
-- `dev` - Development server
-- `build` - Compile TypeScript
-- `start` - Production server
+- `npm run dev` - Development server
+- `npm run build` - Compile TypeScript  
+- `npm start` - Production server
 
 ## License
 
