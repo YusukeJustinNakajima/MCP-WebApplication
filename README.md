@@ -12,7 +12,6 @@ npm run dev
 ## Features
 
 - Express + TypeScript
-- Logging (Morgan & helper-logger)
 - CORS support
 - Environment config
 - HTTP client (Axios)
@@ -21,15 +20,6 @@ npm run dev
 
 - `GET /` - Hello page
 - `GET /quote` - Random quote
-
-## Usage
-
-Import helper-logger for enhanced logging:
-
-```typescript
-import { log } from 'helper-logger';
-log('Hello');
-```
 
 ## Scripts
 
