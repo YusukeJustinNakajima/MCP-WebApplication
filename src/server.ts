@@ -19,6 +19,7 @@ import morgan from "morgan";
 import cors from "cors";
 import dotenv from "dotenv";
 import axios from "axios";
+import { log } from "helper-logger";
 
 dotenv.config();
 
@@ -54,4 +55,5 @@ app.get("/quote", async (_, res) => {
 // ────── Start server ──────
 app.listen(PORT, () => {
   log(`Server running at http://localhost:${PORT}`);
+  log("Hello");
 });
