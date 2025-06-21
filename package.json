@@ -1,1 +1,32 @@
+{
+  "name": "MCP-WebApplication",
+  "version": "1.0.0",
+  "description": "A minimal TypeScript Express application with logging, CORS, dotenv, axios, and chalk.",
+  "main": "build/server.js",
+  "scripts": {
+    "dev": "ts-node src/server.ts",
+    "build": "tsc",
+    "start": "node build/server.js"
+  },
+  "keywords": ["typescript", "express", "demo", "api"],
+  "author": "Yusuke Nakajima",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "axios": "^1.6.8",
+    "chalk": "^5.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.2",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.30",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2"
+  }
+}
 
