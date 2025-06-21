@@ -1,7 +1,7 @@
 {
   "name": "MCP-WebApplication",
   "version": "1.0.0",
-  "description": "A minimal TypeScript Express application with logging, CORS, dotenv, axios, and chalk.",
+  "description": "A minimal TypeScript Express application with logging, CORS, dotenv, axios, and helper-logger.",
   "main": "build/server.js",
   "scripts": {
     "dev": "ts-node src/server.ts",
@@ -16,10 +16,10 @@
   },
   "dependencies": {
     "axios": "^1.6.8",
-    "chalk": "^5.3.0",
     "cors": "^2.8.5",
     "dotenv": "^16.3.2",
     "express": "^4.19.2",
+    "helper-logger": "^4.2.5",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
@@ -29,4 +29,3 @@
     "typescript": "^5.4.2"
   }
 }
-
