@@ -92,19 +92,6 @@ root
 
 ---
 
-## 📋 Related Repositories
-
-All repositories in this organization:
-
-- **Airtable-C2** (Private) - C2 framework using Airtable low-code platform
-- **BugBounty-Resources-For-Japanese** - Repository of useful articles and sites on bug bounties
-- **MCP-WebApplication** - Minimal TypeScript Express application with logging, CORS, dotenv, axios, and helper-logger
-- **SigmaOptimizer** - Sigma rule generation and optimization tool for enhancing detection capabilities
-- **SigmaOptimizer-UI** - User interface for SigmaOptimizer
-- **ThreatStalker** - Multi-layered Sigma rule filtering for efficient threat hunting and forensic investigations
-
----
-
 ## 📝 License
 
 MIT
