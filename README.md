@@ -1,31 +1,30 @@
 # MCP-WebApplication
 
-Minimal TypeScript Express app with logging, CORS, and API integration.
+TypeScript Express app with logging, CORS, and API integration.
 
 ## Features
 
-- Express web framework with TypeScript
-- Request logging (Morgan) and CORS support
-- Environment configuration and HTTP client (Axios)
+- Express with TypeScript
+- Logging (Morgan + helper-logger) & CORS
+- Environment config & HTTP client (Axios)
 
 ## Quick Start
 
 ```bash
 npm install
-echo "PORT=4000" > .env  # Optional
 npm run dev
 ```
 
-## API Endpoints
+## Endpoints
 
 - `GET /` - Hello page
-- `GET /quote` - Random quote JSON
+- `GET /quote` - Random quote
 
 ## Scripts
 
-- `npm run dev` - Development server
-- `npm run build` - Build TypeScript
-- `npm start` - Production server
+- `npm run dev` - Dev server
+- `npm run build` - Build TS
+- `npm start` - Production
 
 ## License
 
