@@ -19,7 +19,6 @@ import morgan from "morgan";
 import cors from "cors";
 import dotenv from "dotenv";
 import axios from "axios";
-import { log } from "helper-logger";
 
 dotenv.config();
 
