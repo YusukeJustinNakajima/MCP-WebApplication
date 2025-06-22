@@ -27,7 +27,3 @@ npm run dev
 - `npm run dev` - Start development server
 - `npm run build` - Compile TypeScript
 - `npm start` - Run production server
-
-## License
-
-MIT
