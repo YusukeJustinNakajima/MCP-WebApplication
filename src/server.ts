@@ -19,6 +19,12 @@ import morgan from "morgan";
 import cors from "cors";
 import dotenv from "dotenv";
 import axios from "axios";
+import * as helperLogger from "helper-logger";
+
+// Create a simple log wrapper using helper-logger
+const log = (message: string, ...args: any[]) => {
+  helperLogger.info(`${message}${args.length > 0 ? ' ' + args.join(' ') : ''}`);
+};
 
 dotenv.config();
 
