@@ -19,7 +19,6 @@ import morgan from "morgan";
 import cors from "cors";
 import dotenv from "dotenv";
 import axios from "axios";
-import { log } from "helper-logger";
 
 dotenv.config();
 
@@ -32,7 +31,6 @@ app.use(cors());        // Enable Cross‑Origin Resource Sharing
 
 // ────── Routes ──────
 app.get("/", (_, res) => {
-  log("Welcome page accessed");
   res.send(
     `<h1>Hello, TypeScript World! 🚀</h1>
      <p>Try the <code>/quote</code> endpoint for a random quote.</p>`
@@ -42,17 +40,13 @@ app.get("/", (_, res) => {
 // Example route that consumes a public API using axios
 app.get("/quote", async (_, res) => {
   try {
-    log("Fetching random quote from API");
     const { data } = await axios.get("https://api.quotable.io/random");
-    log("Quote fetched successfully");
     res.json({ quote: data.content, author: data.author });
   } catch (error) {
-    log("Error fetching quote:", error);
     res.status(500).json({ error: "Could not fetch quote" });
   }
 });
 
 // ────── Start server ──────
 app.listen(PORT, () => {
-  log(`Server running on port ${PORT}`);
 });
