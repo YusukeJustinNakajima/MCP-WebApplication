@@ -8,7 +8,12 @@
     "build": "tsc",
     "start": "node build/server.js"
   },
-  "keywords": ["typescript", "express", "demo", "api"],
+  "keywords": [
+    "typescript",
+    "express",
+    "demo",
+    "api"
+  ],
   "author": "Yusuke Nakajima",
   "license": "MIT",
   "engines": {
@@ -19,10 +24,13 @@
     "cors": "^2.8.5",
     "dotenv": "^16.3.2",
     "express": "^4.19.2",
+    "helper-logger": "^1.0.1",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.19",
     "@types/express": "^4.17.21",
+    "@types/morgan": "^1.9.10",
     "@types/node": "^20.11.30",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.2"
