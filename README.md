@@ -1,6 +1,6 @@
 # MCP-WebApplication
 
-TypeScript Express app with modern tooling.
+TypeScript Express app with modern tooling
 
 ## Quick Start
 
